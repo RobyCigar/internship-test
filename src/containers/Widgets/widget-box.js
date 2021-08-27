@@ -12,14 +12,7 @@ export default class extends Component {
     // };
 
     return (
-      <WidgetBox
-        className="isoWidgetBox"
-        height={height}
-        padding={padding}
-        style={style}
-      >
-        {children}
-      </WidgetBox>
+      <></>
     );
   }
 }

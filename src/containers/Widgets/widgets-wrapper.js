@@ -24,9 +24,7 @@ export default class extends Component {
     };
 
     return (
-      <WidgetWrapper className="isoWidgetsWrapper" style={wrapperStyle}>
-        {children}
-      </WidgetWrapper>
+      <></>
     );
   }
 }

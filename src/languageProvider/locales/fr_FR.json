@@ -1,6 +1,7 @@
 {
   "main.title": "Votre code de réservation",
   "main.guest": "Portail invité",
+  "main.validation": "doit être alphanumérique",
   "sidebar.email": "Email",
   "sidebar.chat": "Chat",
   "sidebar.ecommerce": "Ecommerce",

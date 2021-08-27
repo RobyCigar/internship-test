@@ -1,6 +1,7 @@
 {
   "main.title": "البريد الإلكتروني",
   "main.guest": "بوابة الضيف",
+  "main.validation": "يجب أن تكون أبجدية رقمية",
   "sidebar.email": "البريد الإلكتروني",
   "sidebar.chat": "Chat",
   "sidebar.ecommerce": "التجارة الإلكترونية",

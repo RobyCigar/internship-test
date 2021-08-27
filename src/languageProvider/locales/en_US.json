@@ -1,6 +1,7 @@
 {
   "main.title": "Your booking code",
   "main.guest": "Guest Portal",
+  "main.validation": "must be alphanumeric",
   "sidebar.email": "Email",
   "sidebar.chat": "Chat",
   "sidebar.ecommerce": "Ecommerce",

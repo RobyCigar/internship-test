@@ -1,6 +1,7 @@
 {
   "main.title": "Il tuo codice di prenotazione",
   "main.guest": "Portale degli ospiti",
+  "main.validation": "deve essere alfanumerico",
   "sidebar.email": "E-mail",
   "sidebar.chat": "Chat",
   "sidebar.ecommerce": "ecommerce",

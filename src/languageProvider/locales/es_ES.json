@@ -1,6 +1,7 @@
 {
   "main.title": "Tu código de reserva",
   "main.guest": "Portal de invitados",
+  "main.validation": "Debe ser alfanumérico",
   "sidebar.email": "Email",
   "sidebar.chat": "Chat",
   "sidebar.ecommerce": "Ecommerce",

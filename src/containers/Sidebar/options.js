@@ -1,7 +1,7 @@
 const options = [
   {
     key: 'guest_portal',
-    label: 'Guest Portal',
+    label: 'main.guest',
     leftIcon: 'ion-android-mail',
   },
 ];

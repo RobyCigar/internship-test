@@ -1,0 +1,14 @@
+.container {
+	width: 300px;
+	margin: 50px auto;
+}
+
+.text {
+	text-align: center;
+	font-size: 24px;
+	margin: 30px;
+}
+
+.search {
+	margin: auto;
+}

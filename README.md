@@ -1,7 +1,9 @@
 <h1 align="center"> Isomorphic - React Redux Ticket Tracker </h1>
 
 ![Screenshot_2021-08-28_17-56-11](https://user-images.githubusercontent.com/69680330/131215765-440ec26e-a2ab-43b4-b53d-bc07a940716e.png)
-Note: This repository is created in order to fulfill my task for intern candidate at Bukit Vista.
+Note:
+* This repository is created in order to fulfill my task for intern candidate at Bukit Vista.
+* Due to efficiency, my work is on `src/containers/Widgets/index.js` and for redux on `src/redux/ticket` folder.
 
 ## Description
 React Redux Ticket Tracker is an website app created with isomorphic template. The main purpose of this app is to view and manage the ticket that already booked by guest. Guest are able to view their ticket availability and schedule their arrival time.
@@ -54,7 +56,7 @@ If the user had'nt fill the arrival time, the user can update their arrival time
 
 
 ## Contribution
-To edit the main dashboard page, go to `src/Widgets/index.js`
+To edit the main dashboard page, go to `src/containers/Widgets/index.js`
 
 To edit the card, go to `src/Widgets/BookingInfo.js`
 

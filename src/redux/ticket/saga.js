@@ -1,46 +1,16 @@
 import { takeEvery, call, put, select, all, fork  } from 'redux-saga/effects'
-import ticketActions from './action'
-import axios from "axios";
+import { GUEST, GET_BOOKING } from './action'
+import { getBooking, updateArrival } from './api'
 
-const { GUEST, GET_BOOKING } = ticketActions;
-const URL = "https://bv-online-assessment.herokuapp.com/api/bookings"
-
-const getBooking = async (ticket) => {
-	return await axios({
-		method: "get",
-		url: `${URL}/${ticket}`,
-		headers: {
-			"Access-Control-Allow-Origin": "*",
-			"Access-Control-Allow-Headers": "*"
-		}
-	})
-		.then((res) => {
-			console.log("ini response", res);
-			return "HALOO"
-		})
-		.catch(function (error) {
-			if (error.response) {
-				console.log(error.response.data);
-				console.log(error.response.status);
-				console.log(error.response.headers);
-				throw  error.response.data.error;
-			} else if (error.request) {
-				console.log(error.request);
-			} else {
-				console.log("Error", error.message);
-			}
-			console.log(error.config);
-		});
-};
-
+// Get the ticket code from the store
 const getStateFromStore = state => {
+	console.log("tick3")
 	return state.Tickets.ticket;
 }
 
-
-function* submitLogin() {
+function* submitLogin() { 
+	console.log("tick2")
 	const ticket = yield select(getStateFromStore)
-	console.log("Ini ticket", ticket)
 	try {
 		const data = yield call(getBooking, ticket)
 		yield put({type: GUEST, payload: data})
@@ -49,6 +19,12 @@ function* submitLogin() {
 		yield put({type: GUEST, payload: "Ticket not found"})
 	}
 }
+
+// function* sendUpdatedDataToStore() {
+// 	const ticket = yield select(getStateFromStore)
+// 	const data = yield call(updateArrival, ticket)
+// 	yield put({type: GUEST, payload: data})
+// }
 
 function* watchTicketsAsync() {
 	yield takeEvery( GET_BOOKING, submitLogin)

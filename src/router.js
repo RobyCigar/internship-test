@@ -76,7 +76,7 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
         <RestrictedRoute
           path="/dashboard"
           component={App}
-          isLoggedIn={isLoggedIn}
+          isLoggedIn={true}
         />
       </div>
     </ConnectedRouter>

@@ -1,4 +1,4 @@
-import ticketActions from './action';
+import { GET_BOOKING, UPDATE_BOOKING, GUEST, } from './action';
 
 const initState = {
 	booking_code: "",
@@ -11,12 +11,14 @@ const initState = {
 }
 
 export default function ticketReducer(state = initState, action) {
-	console.log("here state", state)
-	console.log("here2 action", action)
+	console.log('ini state', state)
+	console.log('ini act', action)
 	switch(action.type) {
-		case ticketActions.GET_BOOKING:
+		case GET_BOOKING:
 			return {...state, ticket: action.payload}
-		case ticketActions.GUEST:
+		case UPDATE_BOOKING:
+			return {...state, arrival_time: action.payload}
+		case GUEST:
 			return {...state, ...action.payload}
 		default:
 			return state

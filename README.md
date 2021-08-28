@@ -51,6 +51,7 @@ If the ticket code is valid, the user can view their ticket info such as propert
 ![image](https://user-images.githubusercontent.com/69680330/131216279-c551d5b7-daf7-497e-aae2-3a728c96e514.png)
 
 If the user had'nt fill the arrival time, the user can update their arrival time but only one chance is given otherwise if the user already fill the arrival time they cannot update it anymore. 
+
 ![Screenshot_2021-08-28_17-52-36](https://user-images.githubusercontent.com/69680330/131215776-dedb9257-85b2-4f7f-beff-1d4f441db9e6.png)
 
 ## Product expectation
@@ -65,7 +66,7 @@ If the user had'nt fill the arrival time, the user can update their arrival time
 - [x] Create a text field to search booking code with data validation:
 - [x] All capital letter
 - [x] No space and special characters, only **alphanumerical**
-- [ ] Use form with validation component
+- [x] Use form with validation component
 - [x] Add prompt text “Your booking code” to languageProvider>locales JSON file and call it instead of hard-coding
 - [x] Add menu to the sidebar. “Guest portal” text should be called from the locales JSON as well
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_A91713E9BC24E395634A35D5F0A196353629F3EA6A2703CDAA9B6CC31773AFE2_1553339384855_Screen+Shot+2019-03-23+at+19.09.26.png)

@@ -41,6 +41,10 @@ When redirected to dashboard, user can input their ticket code. If the user inpu
 If the given code is unavailable in the database server the error message will shown.
 ![Screenshot_2021-08-28_17-53-37](https://user-images.githubusercontent.com/69680330/131215784-0e7b751f-d587-438c-bfb4-ed8dc7f4905f.png)
 
+This application is already using localization on the menu bar and currently available in 5 different language such as English, Italy, Spain, China(traditional), and Arabic.
+![image](https://user-images.githubusercontent.com/69680330/131216440-40bc6c2c-3aeb-4fc5-82f8-948f337ef0ac.png)
+
+
 If the ticket code is valid, the user can view their ticket info such as property name, checkin date, checkout date. The data are changing depending on the server database.
 ![image](https://user-images.githubusercontent.com/69680330/131216279-c551d5b7-daf7-497e-aae2-3a728c96e514.png)
 

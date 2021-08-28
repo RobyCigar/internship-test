@@ -13,11 +13,11 @@ const ticketActions = {
 		}
 	},
 
-	updateBooking: ticket => {
+	updateBooking: (time) => {
 		return (dispatch, getState) => {
 			dispatch({
 				type: UPDATE_BOOKING,
-				payload: ticket
+				payload: time
 			});
 		};
 	},

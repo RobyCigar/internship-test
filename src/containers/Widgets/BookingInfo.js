@@ -1,36 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TimePicker, Avatar, Button, message, Card } from 'antd';
 import styles from './index';
 
-const fakedata = {
-  booking_code: "HIJ12345",
-  guest_name: "Violet Well",
-  property_name: "Canggu Villa",
-  check_in_date: "26 April 2021",
-  check_out_date: "30 April 2021",
-  arrival_time: "",
-  profile_picture: "https://picsum.photos/200/300?random=1"
-}
-
 export default function BookingInfo({ ticketInfo, updateBooking }) {
+	const [ timeArrival, setTimeArrival ] = useState("")
 	const { 
 		profile_picture, 
 		property_name, 
 		check_in_date, 
 		check_out_date, 
-		arrival_time 
+		arrival_time,
+		ticket
 	} = ticketInfo
 
+	// Parse the timeString format from hh:mm:ss to hh:mm
 	const onChange = (time, timeString) => {
-		return
+		time = timeString.split(':')
+		time.pop()
+		time = time.join(':')
+		setTimeArrival(time)
 	}
 
-	const update = () => {
-		message.loading("Loading...", 0.7)
-		setTimeout(() => {
-			message.success("Arrival time updated")
-		}, 1000)
+	const update = (e) => {
+		e.preventDefault()
+		updateBooking(timeArrival)
+		message.success('The arrival has successfully updated');
 	};
+
+	console.log(timeArrival)
 
 	return (
 	<div style={{ margin: 'auto', maxWidth: 600 }}>	
@@ -51,7 +48,7 @@ export default function BookingInfo({ ticketInfo, updateBooking }) {
 				arrival_time
 				: (
 				<>
-					<TimePicker use12Hours format="h:mm a" onChange={onChange} />
+					<TimePicker onChange={onChange} />
 					<p style={{color: 'red', fontSize: 13}}>*Please set your arrival time</p>
 				</>
 				)

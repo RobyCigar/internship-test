@@ -11,8 +11,6 @@ const initState = {
 }
 
 export default function ticketReducer(state = initState, action) {
-	console.log('ini state', state)
-	console.log('ini act', action)
 	switch(action.type) {
 		case GET_BOOKING:
 			return {...state, ticket: action.payload}

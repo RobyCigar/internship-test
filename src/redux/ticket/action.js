@@ -1,24 +1,23 @@
-const ticketActions = {
-	GET_BOOKING: "GET_BOOKING",
-	BOOKINGS: "BOOKINGS",
-	GUEST: "GUEST",
+export const GET_BOOKING = "GET_BOOKING"
+export const UPDATE_BOOKING = "UPDATE_BOOKING"
+export const GUEST = "GUEST"
 
+const ticketActions = {
 	getBooking: ticket => {
 		return (dispatch, getState) => {
+			console.log('tick', ticket)
 			dispatch({
-				type: ticketActions.GET_BOOKING,
+				type: GET_BOOKING,
 				payload: ticket
 			})
 		}
 	},
 
-	updateBooking: ticket => {
+	updateBooking: (time) => {
 		return (dispatch, getState) => {
-			console.log("dispatch", dispatch)
-			console.log("getstate", getState)
 			dispatch({
-				type: ticketActions.USER,
-				payload: ticket
+				type: UPDATE_BOOKING,
+				payload: time
 			});
 		};
 	},

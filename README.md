@@ -54,4 +54,11 @@ If the user had'nt fill the arrival time, the user can update their arrival time
 
 
 ## Contribution
+To edit the main dashboard page, go to `src/Widgets/index.js`
+To edit the card, go to `src/Widgets/BookingInfo.js`
+To configure the dataflow of the ticket, go to `src/redux/ticket`
+To configure the route, go to `src/container/App/AppRoute.js` or `src/router`
+To add the localization word, go to `languageProviders/locales` folder
+
+
 Feel free to contribute and make a pull request to this project :D
